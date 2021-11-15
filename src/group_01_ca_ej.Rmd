@@ -12,6 +12,7 @@ knitr::opts_chunk$set(echo = TRUE)
 library(tidyverse)
 library(janitor)
 library(here)
+library(viridis)
 ```
 
 ```{r}
@@ -21,7 +22,20 @@ ces <- read_csv(here("data", "ces3demographics.csv")) %>%
 ```
 
 ```{r}
+# create ggplot
 ggplot(data = ces, aes(x = white_percent, y = ces_3_0_score))+
-  geom_hex() + labs(x = "% White Population", y = "CalEnviroScreen Pollution Burden Score")
+  
+  # create hexbin graph
+  geom_hex() + 
+  
+  # set labels
+  labs(x = "% White Population", 
+       y = "CalEnviroScreen Pollution Burden Score") +
+  
+  # select gradient for colorblindness accessibility
+  scale_fill_viridis()+
+  
+  # set theme
+  theme_minimal()
 ```
 
