@@ -5,8 +5,8 @@ date: "11/15/2021"
 output: html_document
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+```{r setup, include = TRUE}
+knitr::opts_chunk$set(echo = TRUE, message = FALSE, warnings = FALSE)
 # Attach packages
 
 library(tidyverse)
@@ -35,3 +35,4 @@ ggplot(data = ces, aes(x = white_percent, y = ces_3_0_score))+
   theme_minimal()
 ```
 
+**Figure 1:** Relationship between the CalEnviroScreen Pollution Burden Score and the percent of the population that is white. Denser areas are associated with bright yellows and less dense areas are associated with dark blues.
