@@ -36,3 +36,7 @@ ggplot(data = ces, aes(x = white_percent, y = ces_3_0_score))+
 ```
 
 **Figure 1:** Relationship between the CalEnviroScreen Pollution Burden Score and the percent of the population that is white. Denser areas are associated with bright yellows and less dense areas are associated with dark blues.
+
+
+As the percent of the population that is white increases, the pollution burden score decreases. The hexbin graph densities show that this relationship is fairly linear. 
+**Data Citation:** California Office of Environmental Health Hazard Assessment, 2019. CalEnviroScreen 3.0 Data; U.S Census Bureau, 2010. https://data.ca.gov/dataset/calenviroscreen-3-0-results
