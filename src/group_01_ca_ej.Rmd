@@ -5,8 +5,8 @@ date: "11/15/2021"
 output: html_document
 ---
 
-```{r setup, include = TRUE}
-knitr::opts_chunk$set(echo = TRUE, message = FALSE, warnings = FALSE)
+```{r setup, include = TRUE, message = FALSE, warning = FALSE}
+knitr::opts_chunk$set(echo = TRUE, message = FALSE, warning = FALSE)
 # Attach packages
 
 library(tidyverse)
@@ -39,4 +39,5 @@ ggplot(data = ces, aes(x = white_percent, y = ces_3_0_score))+
 
 
 As the percent of the population that is white increases, the pollution burden score decreases. The hexbin graph densities show that this relationship is fairly linear. 
+
 **Data Citation:** California Office of Environmental Health Hazard Assessment, 2019. CalEnviroScreen 3.0 Data; U.S Census Bureau, 2010. https://data.ca.gov/dataset/calenviroscreen-3-0-results
